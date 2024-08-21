@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="sale_order_wizard_view_form" model="ir.ui.view">
+            <field name="name">sale_order_wizard_view_form</field>
+            <field name="model">sale.order.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <head>
+                            <h3>
+                                <field name="name"/>
+                            </h3>
+                        </head>
+                        <group string="WIZARD">
+                            <group>
+                                <field name="client"/>
+                            </group>
+                            <group>
+                                <field name="order_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="print_context" type="object" string="context" class="btn-primary"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
